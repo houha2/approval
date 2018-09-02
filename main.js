@@ -351,9 +351,9 @@ rl.question('enter the classes please as comma seperated list: ', (answer)=>{
 	classes = answer;
 	let slector = toApprove(classes);
 	if(slector){
-		console.log("This major has been approved");
+		console.log('\x1b[32m',"This major has been approved",'\x1b[0m');
 	}else {
-		console.log('This major is not approved.');
+		console.log('\x1b[31m','This major is not approved.','\x1b[0m');
 	}
 		rl.close();
 });
